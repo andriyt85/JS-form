@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Document</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            padding: 0 15px;
+        }
+        table {
+            border-collapse: collapse;
+            font-size: 2em;
+            margin: 0 auto;
+        }
+        legend {
+            font-size: 1.3em;
+        }
+        body {
+            background-color: #ffe6e6;
+        }
+    </style>
+</head>
+<body>
+    <form name="valForm" id="valForm">
+        <fieldset style="width: 30%; margin: 20px auto;">
+            <legend><strong>Some information about yourself</strong></legend>
+           
+            <label><strong>First name</strong><br/></label>
+            <input type="text" id="name" name="name" size="50" value="" min="2" placeholder="Please enter your first name. More than 2 symbols" autofocus required/><br/><br/>
+           
+            <label><strong>Last name</strong></label><br/>
+            <input type="text" id="lname" name="lname" size="50" value="" placeholder="Please enter your last name" required/><br/><br/>
+            
+            <label><strong>E-mail</strong></label><br/>
+            <input type="email" id="email" name="email" value="" size="50" placeholder="Please enter your e-mail"/><br/><br/>
+            
+            <label><strong>Birthday</strong></label><br/>
+            <input type="date" id="birthday" name="birthday" size="50" value="" placeholder="Please enter your last name" min="1900-01-01"/><br/><br/>
+            
+            <input type="button" value="Enter" onclick="myFunction()">
+
+            <input type="button" value="Show table" onclick="showObject()">   
+
+            <input type="button" value="Delete table" onclick="deleteTable()"
+             id= "dis" disabled="disabled" ">  
+
+        </fieldset>   
+    </form>
+</body>
+</html>
